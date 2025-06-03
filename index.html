@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Economics of Hosting the Olympics</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Animate fade-in when in viewport */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Fixed Navbar -->
+  <nav class="fixed top-0 left-0 right-0 bg-blue-900 text-white shadow-md z-50">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <div class="font-bold text-xl">Olympic Economics</div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#introduction" class="hover:text-yellow-400">Introduction</a></li>
+        <li><a href="#cost-benefit" class="hover:text-yellow-400">Cost-Benefit</a></li>
+        <li><a href="#infrastructure" class="hover:text-yellow-400">Infrastructure</a></li>
+        <li><a href="#public-goods" class="hover:text-yellow-400">Public Goods</a></li>
+        <li><a href="#case-studies" class="hover:text-yellow-400">Case Studies</a></li>
+        <li><a href="#quiz" class="hover:text-yellow-400">Quiz</a></li>
+        <li><a href="#conclusion" class="hover:text-yellow-400">Conclusion</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header with name -->
+  <header class="bg-blue-900 text-white py-20 pt-28 relative">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-2">The Economics of Hosting the Olympics</h1>
+      <p class="text-lg">A deep dive into the microeconomic impacts on host cities</p>
+    </div>
+    <div class="absolute top-4 right-6 text-sm text-yellow-400 font-semibold">By Gary Lin</div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="container max-w-5xl mx-auto px-4 py-10 space-y-20">
+
+    <!-- Introduction -->
+    <section id="introduction" class="fade-in">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Introduction</h2>
+      <p class="text-lg leading-relaxed mb-6">
+        Hosting the Olympic Games represents a complex interplay of microeconomic and macroeconomic factors.
+        While it brings global attention and potential economic benefits, the substantial costs and long-term economic implications
+        require careful analysis using key economic principles from supply and demand to opportunity costs and externalities.
+      </p>
+      <div class="bg-blue-50 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-3">Key Economic Concepts</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Opportunity Cost:</strong> Resources allocated to Olympic venues could be used for other public projects or private investments</li>
+          <li><strong>Economies of Scale:</strong> Large-scale infrastructure development can reduce per-unit costs through efficient resource allocation</li>
+          <li><strong>Economic Multiplier Effect:</strong> Initial Olympic investments create ripple effects through increased spending and economic activity</li>
+          <li><strong>Market Efficiency:</strong> Post-Games venue utilization affects return on investment and resource allocation efficiency</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cost-Benefit Analysis -->
+    <section id="cost-benefit" class="fade-in">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Cost-Benefit Analysis</h2>
+      <p class="text-lg leading-relaxed mb-6">
+        Cost-Benefit Analysis (CBA) evaluates the financial viability of hosting the Olympics by comparing anticipated costs and benefits.
+        This analytical method considers both explicit and implicit costs, as well as tangible and intangible benefits.
+      </p>
+      
+      <!-- Educational Content -->
+      <div class="bg-yellow-50 p-6 rounded-lg mb-8">
+        <h3 class="text-2xl font-bold mb-4 text-blue-900">Understanding Cost-Benefit Analysis</h3>
+        
+        <!-- Basic Concepts -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold mb-3 text-blue-800">Basic Concepts</h4>
+          <p class="mb-4">Cost-Benefit Analysis is a systematic approach to evaluating the economic value of projects or policies. In the Olympic context, it helps decision-makers:</p>
+          <ul class="list-disc list-inside space-y-2 ml-4">
+            <li>Determine project investment worthiness</li>
+            <li>Compare different economic alternatives</li>
+            <li>Optimize resource allocation</li>
+            <li>Assess long-term impacts</li>
+          </ul>
+        </div>
+
+        <!-- Analysis Steps -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold mb-3 text-blue-800">Analysis Steps</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-lg">
+              <h5 class="font-semibold mb-2">1. Define Scope</h5>
+              <ul class="list-disc list-inside text-sm">
+                <li>Project timeline</li>
+                <li>Geographic impact area</li>
+                <li>Stakeholder identification</li>
+                <li>Alternative options</li>
+              </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <h5 class="font-semibold mb-2">2. Identify Costs</h5>
+              <ul class="list-disc list-inside text-sm">
+                <li>Direct costs (construction, operations)</li>
+                <li>Indirect costs (maintenance, management)</li>
+                <li>Opportunity costs</li>
+                <li>Externality costs</li>
+              </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <h5 class="font-semibold mb-2">3. Quantify Benefits</h5>
+              <ul class="list-disc list-inside text-sm">
+                <li>Direct benefits (tickets, advertising)</li>
+                <li>Indirect benefits (tourism, employment)</li>
+                <li>Social benefits</li>
+                <li>Long-term development gains</li>
+              </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <h5 class="font-semibold mb-2">4. Evaluate Results</h5>
+              <ul class="list-disc list-inside text-sm">
+                <li>Net Present Value (NPV) calculation</li>
+                <li>Benefit-Cost Ratio</li>
+                <li>Sensitivity analysis</li>
+                <li>Risk assessment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculation Methods -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold mb-3 text-blue-800">Key Calculation Methods in Cost-Benefit Analysis</h4>
+          <p class="mb-4 text-gray-700">In AP Microeconomics, analyzing costs and benefits involves more than just listing numbers — it includes applying quantitative techniques to evaluate decisions logically and efficiently.</p>
+          
+          <div class="space-y-6">
+            <!-- Net Benefit Calculation -->
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h5 class="font-semibold text-lg mb-3">1. Net Benefit Calculation</h5>
+              <div class="bg-gray-50 p-4 rounded mb-3">
+                <p class="font-mono">Net Benefit = Total Benefit − Total Cost</p>
+              </div>
+              <div class="mb-3">
+                <p class="font-semibold mb-2">Example:</p>
+                <p>If Tokyo 2020 had a total cost of $15.4 billion and estimated benefits of $20 billion:</p>
+                <p class="font-mono bg-blue-50 p-2 rounded mt-2">Net Benefit = $20B − $15.4B = +$4.6B</p>
+                <p class="text-gray-600 mt-2 italic">A positive net benefit indicates that the project was, in theory, worth the cost.</p>
+              </div>
+            </div>
+
+            <!-- Benefit-Cost Ratio -->
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h5 class="font-semibold text-lg mb-3">2. Benefit-Cost Ratio (BCR)</h5>
+              <div class="bg-gray-50 p-4 rounded mb-3">
+                <p class="font-mono">BCR = Total Benefit / Total Cost</p>
+              </div>
+              <div class="mb-3">
+                <p class="font-semibold mb-2">Interpretation:</p>
+                <ul class="list-disc list-inside space-y-1 mb-3">
+                  <li>BCR > 1 → Benefits exceed costs (project is economically viable)</li>
+                  <li>BCR < 1 → Costs exceed benefits (not viable)</li>
+                </ul>
+                <p class="font-semibold mb-2">Examples:</p>
+                <div class="bg-blue-50 p-2 rounded space-y-1">
+                  <p class="font-mono">London 2012: $16.5B / $14.8B ≈ 1.11 → Viable</p>
+                  <p class="font-mono">Beijing 2008: $25B / $40B = 0.625 → Not viable</p>
+                </div>
+                <p class="text-gray-600 mt-2 italic">This method allows for relative comparisons across different cities or events.</p>
+              </div>
+            </div>
+
+            <!-- Marginal Analysis -->
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h5 class="font-semibold text-lg mb-3">3. Marginal Analysis</h5>
+              <div class="mb-3">
+                <p class="font-semibold mb-2">Definition:</p>
+                <p>Marginal analysis compares the additional benefit (Marginal Benefit, MB) with the additional cost (Marginal Cost, MC) of a decision.</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded mb-3">
+                <p class="font-semibold mb-2">Decision Rule:</p>
+                <p class="font-mono">If MB ≥ MC → Continue</p>
+                <p class="font-mono">If MB < MC → Stop</p>
+              </div>
+              <div>
+                <p class="font-semibold mb-2">Application:</p>
+                <p>A city should continue to invest in new Olympic venues only if the marginal benefit (e.g., more tourist revenue or improved transport) exceeds the marginal cost (e.g., additional construction expenses).</p>
+              </div>
+            </div>
+
+            <!-- Opportunity Cost -->
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h5 class="font-semibold text-lg mb-3">4. Opportunity Cost Estimation</h5>
+              <div class="mb-3">
+                <p class="font-semibold mb-2">Definition:</p>
+                <p>The value of the next best alternative that is foregone when a decision is made.</p>
+              </div>
+              <div>
+                <p class="font-semibold mb-2">Application:</p>
+                <p>If a city spends $10 billion on the Olympics instead of upgrading its healthcare system, the opportunity cost is improved public health outcomes.</p>
+                <p class="text-gray-600 mt-2 italic">Opportunity cost is not always monetary — it includes time, well-being, or political capital.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Olympic Application -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold mb-3 text-blue-800">Olympic Games Application</h4>
+          <div class="bg-white p-4 rounded-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h5 class="font-semibold mb-2">Short-term Analysis (During Games)</h5>
+                <ul class="list-disc list-inside text-sm">
+                  <li>Venue construction costs</li>
+                  <li>Operational expenses</li>
+                  <li>Ticket revenues</li>
+                  <li>Sponsorship income</li>
+                  <li>Tourism revenue</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="font-semibold mb-2">Long-term Analysis (Post-Games)</h5>
+                <ul class="list-disc list-inside text-sm">
+                  <li>Infrastructure utilization</li>
+                  <li>City brand value</li>
+                  <li>Economic growth effects</li>
+                  <li>Employment market changes</li>
+                  <li>Real estate market impact</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Important Considerations -->
+        <div>
+          <h4 class="text-xl font-semibold mb-3 text-blue-800">Analysis Considerations</h4>
+          <div class="bg-white p-4 rounded-lg">
+            <ul class="list-disc list-inside space-y-2">
+              <li><strong>Time Value:</strong> Consider the time value of money using appropriate discount rates</li>
+              <li><strong>Uncertainty:</strong> Conduct sensitivity analysis and risk assessment</li>
+              <li><strong>Externalities:</strong> Account for environmental and social impacts</li>
+              <li><strong>Distribution Effects:</strong> Evaluate benefit and cost distribution among different groups</li>
+              <li><strong>Alternatives:</strong> Compare with other potential investment options</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Original charts section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <!-- Olympic Costs Chart -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Recent Olympic Games Total Costs (Billion USD)</h3>
+          <canvas id="costsChart"></canvas>
+        </div>
+        
+        <!-- Economic Impact Chart -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">GDP Impact (5 Years Before and After)</h3>
+          <canvas id="impactChart"></canvas>
+        </div>
+      </div>
+      
+      <div class="bg-blue-50 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-3">Economic Analysis</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-semibold mb-2">Direct Costs</h4>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Capital expenditure (CAPEX) on venues and infrastructure</li>
+              <li>Operating expenses (OPEX) during Games period</li>
+              <li>Security and risk management costs</li>
+              <li>Environmental impact mitigation</li>
+              <li>Opportunity costs of public funds</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Economic Benefits</h4>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Increased tourism revenue and foreign direct investment</li>
+              <li>Employment growth and wage effects</li>
+              <li>Productivity gains from infrastructure improvements</li>
+              <li>Enhanced international trade opportunities</li>
+              <li>Long-term urban development benefits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infrastructure -->
+    <section id="infrastructure" class="fade-in">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Long-Term Infrastructure Investment</h2>
+      <p class="text-lg leading-relaxed">
+        Olympic hosting often leads to large-scale infrastructure development.
+        While some of it can benefit cities (e.g., new transit systems), others become underused "white elephants."
+      </p>
+      <ul class="list-disc list-inside mt-4">
+        <li><strong>Athens 2004</strong>: Many venues abandoned due to maintenance costs.</li>
+        <li><strong>London 2012</strong>: Stratford area revitalized with sustainable urban planning.</li>
+        <li><strong>Beijing 2008</strong>: Bird's Nest Stadium mostly unused post-Olympics.</li>
+      </ul>
+    </section>
+
+    <!-- Public Goods and Externalities -->
+    <section id="public-goods" class="fade-in bg-gray-100 p-6 rounded-lg">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Public Goods and Externalities</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Public Goods Analysis</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Pure Public Goods:</strong>
+              <ul class="ml-6 mt-2 space-y-1">
+                <li>National pride and international prestige (non-excludable, non-rivalrous)</li>
+                <li>Enhanced city reputation and brand value</li>
+                <li>Knowledge transfer and cultural exchange</li>
+              </ul>
+            </li>
+            <li><strong>Mixed Public Goods:</strong>
+              <ul class="ml-6 mt-2 space-y-1">
+                <li>Transportation infrastructure (partially excludable)</li>
+                <li>Sports facilities (congestion possible)</li>
+                <li>Urban parks and public spaces (shared resources)</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Externality Analysis</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Positive Externalities:</strong>
+              <ul class="ml-6 mt-2 space-y-1">
+                <li>Technology and knowledge spillovers</li>
+                <li>Increased property values in developed areas</li>
+                <li>Health benefits from sports infrastructure</li>
+                <li>Enhanced social capital and community cohesion</li>
+              </ul>
+            </li>
+            <li><strong>Negative Externalities:</strong>
+              <ul class="ml-6 mt-2 space-y-1">
+                <li>Environmental degradation during construction</li>
+                <li>Displacement of local residents and businesses</li>
+                <li>Market distortions in housing and labor</li>
+                <li>Congestion and strain on public services</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="case-studies" class="fade-in">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Case Studies</h2>
+      
+      <!-- Case Study Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <!-- London 2012 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="relative h-64">
+            <img src="file:///Users/kaijunlin/olympic-economics/images/london%20stadium.jpeg" 
+                 alt="London Olympic Stadium aerial view"
+                 class="absolute w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">London 2012</h3>
+            <p class="text-gray-600 mb-4">Successful Urban Regeneration Case</p>
+            <button onclick="toggleCaseStudy('london')" class="text-blue-600 hover:text-blue-800 flex items-center">
+              View Details 
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div id="london" class="hidden mt-4">
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Transformed East London from a deprived area to a modern community</li>
+                <li>Olympic Village converted into residential area</li>
+                <li>New transport infrastructure in continuous use</li>
+                <li>Well-planned post-Games venue usage</li>
+                <li>Stadium now home to West Ham United Football Club</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Beijing 2008 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="relative h-64">
+            <img src="file:///Users/kaijunlin/olympic-economics/images/beijing-national-stadium-outside.jpg" 
+                 alt="Beijing National Stadium (Bird's Nest)" 
+                 class="absolute w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Beijing 2008</h3>
+            <p class="text-gray-600 mb-4">Large-Scale Infrastructure Investment</p>
+            <button onclick="toggleCaseStudy('beijing')" class="text-blue-600 hover:text-blue-800 flex items-center">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div id="beijing" class="hidden mt-4">
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Total investment exceeded $40 billion</li>
+                <li>Iconic "Bird's Nest" stadium design</li>
+                <li>New subway lines and airport terminals</li>
+                <li>Significant environmental improvements</li>
+                <li>Some venues underutilized post-Games</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="fade-in bg-yellow-50 p-6 rounded-lg">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Knowledge Quiz</h2>
+      <div id="quiz-container">
+        <div id="quiz-progress" class="w-full bg-gray-200 rounded-full h-2.5 mb-6">
+          <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+        </div>
+        <div id="question-container" class="mb-6">
+          <!-- Questions will be inserted here -->
+        </div>
+        <div class="flex justify-between">
+          <button id="prev-btn" onclick="previousQuestion()" class="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600 disabled:opacity-50" disabled>Previous</button>
+          <button id="next-btn" onclick="nextQuestion()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Next</button>
+        </div>
+        <div id="results" class="hidden mt-6 p-4 bg-white rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Quiz Results</h3>
+          <p id="score-display"></p>
+          <div id="answers-review" class="mt-4 space-y-4"></div>
+          <div class="flex space-x-4 mt-6">
+            <button onclick="showAnswers()" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">Show Correct Answers</button>
+            <button onclick="restartQuiz()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Restart Quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add this before the analysis form section -->
+    <section id="calculator-explanation" class="fade-in mb-20">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">How the Calculator Works</h2>
+      <p class="text-lg mb-6">Understanding the economic analysis methodology behind the Olympic Games cost-benefit calculator.</p>
+
+      <div class="space-y-8">
+        <!-- Data Collection -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3 text-blue-800">1. Data Collection Process</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold mb-2">Cost Components</h4>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Infrastructure Costs: Venues, transportation, facilities</li>
+                <li>Operational Costs: Staff, services, logistics</li>
+                <li>Security Costs: Personnel, equipment, systems</li>
+                <li>Other Costs: Environmental, social, contingency</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Revenue Streams</h4>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Ticket Sales: Direct event revenue</li>
+                <li>Broadcasting Rights: Media contracts</li>
+                <li>Sponsorships: Corporate partnerships</li>
+                <li>Tourism: Visitor spending, accommodation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculation Methods -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3 text-blue-800">2. Calculation Methodology</h3>
+          <div class="space-y-4">
+            <div class="bg-gray-50 p-4 rounded">
+              <h4 class="font-semibold mb-2">Net Benefit Calculation</h4>
+              <p class="font-mono text-sm mb-2">Net Benefit = Total Benefits - Total Costs</p>
+              <p class="text-gray-600">Where:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                <li>Total Benefits = Σ(All Revenue Streams)</li>
+                <li>Total Costs = Σ(All Cost Components)</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded">
+              <h4 class="font-semibold mb-2">Benefit-Cost Ratio (BCR)</h4>
+              <p class="font-mono text-sm mb-2">BCR = Total Benefits / Total Costs</p>
+              <p class="text-gray-600">Interpretation:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                <li>BCR > 1.2: Highly viable project</li>
+                <li>1 < BCR ≤ 1.2: Marginally viable</li>
+                <li>BCR ≤ 1: Not economically viable</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded">
+              <h4 class="font-semibold mb-2">Net Present Value (NPV)</h4>
+              <p class="font-mono text-sm mb-2">NPV = Σ(Net Benefit_t / (1 + r)^t)</p>
+              <p class="text-gray-600">Where:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                <li>t = Year in the analysis period</li>
+                <li>r = Discount rate</li>
+                <li>Net Benefit_t = Net benefit in year t</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Analysis Process -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3 text-blue-800">3. Analysis Process Flow</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-blue-50 p-4 rounded">
+              <h4 class="font-semibold mb-2">Step 1: Data Input</h4>
+              <ul class="list-disc list-inside text-sm text-gray-600">
+                <li>Enter city information</li>
+                <li>Input all costs</li>
+                <li>Input all revenues</li>
+                <li>Set financial parameters</li>
+              </ul>
+            </div>
+            <div class="bg-blue-50 p-4 rounded">
+              <h4 class="font-semibold mb-2">Step 2: Calculations</h4>
+              <ul class="list-disc list-inside text-sm text-gray-600">
+                <li>Aggregate costs and benefits</li>
+                <li>Apply discount rates</li>
+                <li>Calculate key metrics</li>
+                <li>Perform viability checks</li>
+              </ul>
+            </div>
+            <div class="bg-blue-50 p-4 rounded">
+              <h4 class="font-semibold mb-2">Step 3: Results</h4>
+              <ul class="list-disc list-inside text-sm text-gray-600">
+                <li>Display net benefit</li>
+                <li>Show BCR analysis</li>
+                <li>Present NPV results</li>
+                <li>Provide assessment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Considerations -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3 text-blue-800">4. Important Considerations</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold mb-2">Economic Factors</h4>
+              <ul class="list-disc list-inside text-gray-700">
+                <li>Time value of money (discount rate)</li>
+                <li>Opportunity costs</li>
+                <li>Economic multiplier effects</li>
+                <li>Long-term infrastructure value</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Risk Factors</h4>
+              <ul class="list-disc list-inside text-gray-700">
+                <li>Cost overrun potential</li>
+                <li>Revenue uncertainty</li>
+                <li>Market conditions</li>
+                <li>External economic factors</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Usage Example -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3 text-blue-800">5. Example Application</h3>
+          <div class="space-y-4">
+            <p class="text-gray-700">Consider a hypothetical Olympic bid with the following parameters:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-gray-50 p-4 rounded">
+                <h4 class="font-semibold mb-2">Sample Inputs</h4>
+                <ul class="list-none space-y-1 text-sm">
+                  <li>Infrastructure Cost: $10B</li>
+                  <li>Operational Cost: $3B</li>
+                  <li>Total Benefits: $15B</li>
+                  <li>Discount Rate: 5%</li>
+                  <li>Analysis Period: 10 years</li>
+                </ul>
+              </div>
+              <div class="bg-gray-50 p-4 rounded">
+                <h4 class="font-semibold mb-2">Results</h4>
+                <ul class="list-none space-y-1 text-sm">
+                  <li>Net Benefit: $2B</li>
+                  <li>BCR: 1.15</li>
+                  <li>NPV: $1.54B</li>
+                  <li>Assessment: Marginally Viable</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analysis Form -->
+    <section id="analysis-form" class="fade-in mb-20">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Olympic Economic Analysis Calculator</h2>
+      <p class="text-lg mb-6">Use this tool to analyze the economic impact of hosting the Olympic Games.</p>
+
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <form id="olympic-analysis-form" onsubmit="calculateAnalysis(event)" class="space-y-6">
+          <!-- Basic Information -->
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-4 text-blue-800">Host City Information</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-gray-700 mb-2" for="city-name">Host City</label>
+                <input type="text" id="city-name" name="city-name" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2" for="olympic-year">Year</label>
+                <input type="number" id="olympic-year" name="olympic-year" min="1896" max="2050" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+            </div>
+          </div>
+
+          <!-- Costs Section -->
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-4 text-blue-800">Costs (in millions USD)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-gray-700 mb-2" for="infrastructure-cost">Infrastructure Cost</label>
+                <input type="number" id="infrastructure-cost" name="infrastructure-cost" min="0" step="0.1" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2" for="operational-cost">Operational Cost</label>
+                <input type="number" id="operational-cost" name="operational-cost" min="0" step="0.1" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2" for="security-cost">Security Cost</label>
+                <input type="number" id="security-cost" name="security-cost" min="0" step="0.1" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2" for="other-costs">Other Costs</label>
+                <input type="number" id="other-costs" name="other-costs" min="0" step="0.1" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+            </div>
+          </div>
+
+          <!-- Benefits Section -->
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-4 text-blue-800">Benefits (in millions USD)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-gray-700 mb-2" for="ticket-revenue">Ticket Revenue</label>
+                <input type="number" id="ticket-revenue" name="ticket-revenue" min="0" step="0.1" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2" for="broadcast-revenue">Broadcasting Revenue</label>
+                <input type="number" id="broadcast-revenue" name="broadcast-revenue" min="0" step="0.1" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2" for="sponsorship-revenue">Sponsorship Revenue</label>
+                <input type="number" id="sponsorship-revenue" name="sponsorship-revenue" min="0" step="0.1" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2" for="tourism-revenue">Tourism Revenue</label>
+                <input type="number" id="tourism-revenue" name="tourism-revenue" min="0" step="0.1" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Factors -->
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-4 text-blue-800">Additional Factors</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-gray-700 mb-2" for="discount-rate">Discount Rate (%)</label>
+                <input type="number" id="discount-rate" name="discount-rate" min="0" max="100" step="0.1" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2" for="analysis-period">Analysis Period (Years)</label>
+                <input type="number" id="analysis-period" name="analysis-period" min="1" max="50" required
+                       class="w-full px-4 py-2 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="flex justify-center">
+            <button type="submit" 
+                    class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              Calculate Analysis
+            </button>
+          </div>
+        </form>
+
+        <!-- Results Section -->
+        <div id="analysis-results" class="mt-8 hidden">
+          <h3 class="text-xl font-semibold mb-4 text-blue-800">Analysis Results</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold mb-2">Net Benefit</h4>
+              <p id="net-benefit-result" class="text-2xl font-bold text-blue-600"></p>
+              <p class="text-sm text-gray-600 mt-1">Total benefits minus total costs</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold mb-2">Benefit-Cost Ratio (BCR)</h4>
+              <p id="bcr-result" class="text-2xl font-bold text-blue-600"></p>
+              <p class="text-sm text-gray-600 mt-1">Ratio of total benefits to total costs</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold mb-2">Net Present Value (NPV)</h4>
+              <p id="npv-result" class="text-2xl font-bold text-blue-600"></p>
+              <p class="text-sm text-gray-600 mt-1">Present value of future net benefits</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold mb-2">Economic Assessment</h4>
+              <p id="assessment-result" class="text-lg font-medium"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion" class="fade-in bg-gray-100 p-6 rounded-lg">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Economic Impact Analysis</h2>
+      <div class="space-y-4">
+        <p class="text-lg">
+          The economic legacy of hosting the Olympics depends on various microeconomic and macroeconomic factors:
+        </p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Short-term Stimulus:</strong> Immediate boost to aggregate demand through construction and tourism spending</li>
+          <li><strong>Market Efficiency:</strong> Success depends on optimal resource allocation and post-Games planning</li>
+          <li><strong>Economic Integration:</strong> Enhanced international trade and investment opportunities</li>
+          <li><strong>Structural Changes:</strong> Long-term impacts on urban development and economic geography</li>
+        </ul>
+        <p class="mt-4">
+          Future host cities must carefully consider these economic principles to maximize benefits while minimizing costs,
+          ensuring sustainable economic growth beyond the Games period. The key is to create lasting value through strategic planning
+          and effective resource allocation.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 px-4">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-center md:text-left mb-4 md:mb-0">
+          <p>Sources: IOC reports, BBC, NPR, Academic studies</p>
+          <p class="text-sm mt-1">Economic analysis based on principles from AP Economics</p>
+        </div>
+        <div class="text-right">
+          <p class="font-semibold">Created by Gary Lin</p>
+          <p class="text-sm text-gray-300">© 2025 All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer for fade-in animations
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+  <!-- Add Charts -->
+  <script>
+    // Costs Chart
+    const costsCtx = document.getElementById('costsChart').getContext('2d');
+    new Chart(costsCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Beijing 2008', 'London 2012', 'Rio 2016', 'Tokyo 2020'],
+        datasets: [{
+          label: 'Total Cost',
+          data: [45, 14.8, 13.7, 15.4],
+          backgroundColor: [
+            'rgba(54, 162, 235, 0.7)',
+            'rgba(75, 192, 192, 0.7)',
+            'rgba(255, 159, 64, 0.7)',
+            'rgba(153, 102, 255, 0.7)'
+          ],
+          borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(255, 159, 64, 1)',
+            'rgba(153, 102, 255, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Billion USD'
+            }
+          }
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return `Total Cost: $${context.raw} billion`;
+              }
+            }
+          }
+        }
+      }
+    });
+
+    // GDP Impact Chart
+    const impactCtx = document.getElementById('impactChart').getContext('2d');
+    new Chart(impactCtx, {
+      type: 'line',
+      data: {
+        labels: ['Y-5', 'Y-4', 'Y-3', 'Y-2', 'Y-1', 'Games Year', 'Y+1', 'Y+2', 'Y+3', 'Y+4', 'Y+5'],
+        datasets: [{
+          label: 'London 2012',
+          data: [0, 0.2, 0.5, 1.2, 2.5, 3.8, 2.6, 1.8, 1.5, 1.2, 1.0],
+          borderColor: 'rgba(75, 192, 192, 1)',
+          tension: 0.4,
+          fill: false
+        },
+        {
+          label: 'Beijing 2008',
+          data: [0.1, 0.4, 0.8, 1.5, 3.2, 4.5, 3.2, 2.4, 1.8, 1.4, 1.1],
+          borderColor: 'rgba(54, 162, 235, 1)',
+          tension: 0.4,
+          fill: false
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            title: {
+              display: true,
+              text: 'GDP Growth Contribution (%)'
+            }
+          }
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return `${context.dataset.label}: ${context.raw}% GDP growth`;
+              }
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+  <!-- Quiz and Interaction Scripts -->
+  <script>
+    // Case study toggle
+    function toggleCaseStudy(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle('hidden');
+    }
+
+    // Quiz data
+    const quizData = [
+      {
+        question: "What is the main source of revenue for hosting the Olympics?",
+        options: ["Ticket sales", "Broadcasting rights", "Sponsorships", "Licensing"],
+        correct: 1
+      },
+      {
+        question: "Which Olympics had the highest total cost?",
+        options: ["London 2012", "Beijing 2008", "Rio 2016", "Tokyo 2020"],
+        correct: 1
+      },
+      {
+        question: "What percentage of total Olympic costs typically goes to infrastructure investment?",
+        options: ["20-30%", "35-45%", "50-60%", "65-75%"],
+        correct: 2
+      },
+      {
+        question: "What was the main post-Games use of the London Olympic Village?",
+        options: ["Business center", "Sports training facility", "Residential area", "Tourist attraction"],
+        correct: 2
+      },
+      {
+        question: "How long does the GDP impact of hosting the Olympics typically last?",
+        options: ["2-3 years", "4-5 years", "6-7 years", "8-10 years"],
+        correct: 1
+      }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+    let answers = [];
+
+    // Initialize quiz
+    function initializeQuiz() {
+      showQuestion(currentQuestion);
+      updateProgress();
+    }
+
+    // Show question
+    function showQuestion(index) {
+      const questionContainer = document.getElementById('question-container');
+      const question = quizData[index];
+      
+      let html = `
+        <h3 class="text-xl font-bold mb-4">${index + 1}. ${question.question}</h3>
+        <div class="space-y-3">
+      `;
+      
+      question.options.forEach((option, i) => {
+        html += `
+          <div class="flex items-center">
+            <input type="radio" name="quiz" value="${i}" id="option${i}" 
+                   ${answers[index] === i ? 'checked' : ''} 
+                   class="w-4 h-4 text-blue-600">
+            <label for="option${i}" class="ml-2">${option}</label>
+          </div>
+        `;
+      });
+      
+      html += '</div>';
+      questionContainer.innerHTML = html;
+    }
+
+    // Update progress bar
+    function updateProgress() {
+      const progress = ((currentQuestion + 1) / quizData.length) * 100;
+      document.getElementById('progress-bar').style.width = `${progress}%`;
+      
+      document.getElementById('prev-btn').disabled = currentQuestion === 0;
+      document.getElementById('next-btn').innerHTML = 
+        currentQuestion === quizData.length - 1 ? 'Finish' : 'Next';
+    }
+
+    // Next question
+    function nextQuestion() {
+      const selected = document.querySelector('input[name="quiz"]:checked');
+      if (!selected && currentQuestion !== quizData.length) {
+        alert('Please select an option');
+        return;
+      }
+      
+      if (currentQuestion < quizData.length) {
+        answers[currentQuestion] = parseInt(selected.value);
+      }
+      
+      if (currentQuestion === quizData.length - 1) {
+        calculateResults();
+        return;
+      }
+      
+      currentQuestion++;
+      showQuestion(currentQuestion);
+      updateProgress();
+    }
+
+    // Previous question
+    function previousQuestion() {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        showQuestion(currentQuestion);
+        updateProgress();
+      }
+    }
+
+    // Calculate results
+    function calculateResults() {
+      score = 0;
+      answers.forEach((answer, index) => {
+        if (answer === quizData[index].correct) {
+          score++;
+        }
+      });
+      
+      const percentage = (score / quizData.length) * 100;
+      const resultsDiv = document.getElementById('results');
+      const scoreDisplay = document.getElementById('score-display');
+      
+      resultsDiv.classList.remove('hidden');
+      document.getElementById('question-container').classList.add('hidden');
+      document.getElementById('prev-btn').classList.add('hidden');
+      document.getElementById('next-btn').classList.add('hidden');
+      
+      scoreDisplay.innerHTML = `
+        You got ${score} questions correct, Score: ${percentage}%<br>
+        ${percentage >= 80 ? 'Excellent! You have a great understanding of Olympic economics!' : 
+          percentage >= 60 ? 'Good job! A bit more study of the details would be perfect!' : 
+          'We recommend reviewing the content again!'}
+      `;
+
+      // Clear previous answers review
+      document.getElementById('answers-review').innerHTML = '';
+    }
+
+    // Show correct answers with explanations
+    function showAnswers() {
+      const answersReview = document.getElementById('answers-review');
+      answersReview.innerHTML = '<h4 class="font-bold text-lg mb-4">Detailed Answer Review:</h4>';
+      
+      quizData.forEach((question, index) => {
+        const userAnswer = answers[index];
+        const isCorrect = userAnswer === question.correct;
+        
+        const answerHtml = `
+          <div class="p-4 ${isCorrect ? 'bg-green-50' : 'bg-red-50'} rounded-lg mb-4">
+            <p class="font-semibold">${index + 1}. ${question.question}</p>
+            <div class="mt-2">
+              <p class="text-gray-700">Your answer: 
+                <span class="${isCorrect ? 'text-green-600' : 'text-red-600'}">
+                  ${question.options[userAnswer]}
+                </span>
+              </p>
+              <p class="text-gray-700">Correct answer: 
+                <span class="text-green-600 font-semibold">
+                  ${question.options[question.correct]}
+                </span>
+              </p>
+            </div>
+            <div class="mt-2 text-sm">
+              ${getExplanation(index)}
+            </div>
+          </div>
+        `;
+        answersReview.innerHTML += answerHtml;
+      });
+    }
+
+    // Get explanation for each question
+    function getExplanation(questionIndex) {
+      const explanations = [
+        "Broadcasting rights are the largest revenue source for the Olympics, accounting for 73% of total revenue.",
+        "Beijing 2008 had the highest total cost at $45 billion, significantly higher than other recent Olympics.",
+        "Infrastructure investment typically accounts for 50-60% of total costs, making it the largest expense category.",
+        "The London Olympic Village was converted into residential housing as part of the legacy planning.",
+        "The GDP impact typically peaks during the Games year and gradually decreases over 4-5 years."
+      ];
+      return `<p class="mt-2 text-gray-600"><strong>Explanation:</strong> ${explanations[questionIndex]}</p>`;
+    }
+
+    // Restart quiz
+    function restartQuiz() {
+      currentQuestion = 0;
+      score = 0;
+      answers = [];
+      document.getElementById('results').classList.add('hidden');
+      document.getElementById('question-container').classList.remove('hidden');
+      document.getElementById('prev-btn').classList.remove('hidden');
+      document.getElementById('next-btn').classList.remove('hidden');
+      document.getElementById('answers-review').innerHTML = '';
+      showQuestion(0);
+      updateProgress();
+    }
+
+    // Initialize quiz
+    initializeQuiz();
+
+    // Add smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+
+  <!-- Analysis Form Script -->
+  <script>
+    function calculateAnalysis(event) {
+      event.preventDefault();
+      
+      // Get form values
+      const form = document.getElementById('olympic-analysis-form');
+      const formData = new FormData(form);
+      
+      // Calculate total costs
+      const infrastructureCost = parseFloat(formData.get('infrastructure-cost'));
+      const operationalCost = parseFloat(formData.get('operational-cost'));
+      const securityCost = parseFloat(formData.get('security-cost'));
+      const otherCosts = parseFloat(formData.get('other-costs'));
+      const totalCosts = infrastructureCost + operationalCost + securityCost + otherCosts;
+      
+      // Calculate total benefits
+      const ticketRevenue = parseFloat(formData.get('ticket-revenue'));
+      const broadcastRevenue = parseFloat(formData.get('broadcast-revenue'));
+      const sponsorshipRevenue = parseFloat(formData.get('sponsorship-revenue'));
+      const tourismRevenue = parseFloat(formData.get('tourism-revenue'));
+      const totalBenefits = ticketRevenue + broadcastRevenue + sponsorshipRevenue + tourismRevenue;
+      
+      // Calculate metrics
+      const netBenefit = totalBenefits - totalCosts;
+      const bcr = totalBenefits / totalCosts;
+      
+      // Calculate NPV
+      const discountRate = parseFloat(formData.get('discount-rate')) / 100;
+      const analysisPeriod = parseInt(formData.get('analysis-period'));
+      let npv = 0;
+      for (let t = 0; t < analysisPeriod; t++) {
+        npv += netBenefit / Math.pow(1 + discountRate, t);
+      }
+      
+      // Display results
+      document.getElementById('analysis-results').classList.remove('hidden');
+      document.getElementById('net-benefit-result').textContent = `$${netBenefit.toFixed(2)} million`;
+      document.getElementById('bcr-result').textContent = bcr.toFixed(2);
+      document.getElementById('npv-result').textContent = `$${npv.toFixed(2)} million`;
+      
+      // Provide assessment
+      const assessmentElement = document.getElementById('assessment-result');
+      if (bcr > 1.2) {
+        assessmentElement.textContent = 'Highly Viable Project';
+        assessmentElement.className = 'text-lg font-medium text-green-600';
+      } else if (bcr > 1) {
+        assessmentElement.textContent = 'Marginally Viable Project';
+        assessmentElement.className = 'text-lg font-medium text-yellow-600';
+      } else {
+        assessmentElement.textContent = 'Not Economically Viable';
+        assessmentElement.className = 'text-lg font-medium text-red-600';
+      }
+    }
+  </script>
+
+</body>
+</html> 
